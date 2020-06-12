@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="img/teslaclubb.png" type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tesla Club Ukranine</title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+  <!--css анимация-->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!--js анимация-->
+  <script src="js/wow.min.js"></script>
+    <script>
+  new WOW().init();
+    </script>
+
+</head>
+<body>
+
+<header id="toppage">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"  style="background-color: #fff;">
+  <a class="navbar-brand" href="#"><img src="https://tesla-club.com.ua/storage/images/teslaclubb.png" href="#toppage" width="120px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#toppage"><span style="font-size: 20px">Главная</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span style="font-size: 20px">Електромобили</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Model x.html">Tesla Model X</a>
+          <a class="dropdown-item" href="Model s.html">Tesla Model S</a>
+          <a class="dropdown-item" href="Model 3.html">Tesla Model 3</a>
+
+      <li class="nav-item">
+        <a class="nav-link" href="Инфаструктура.html"><span style="font-size: 20px">Инфаструктура</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#news" style="font-size: 20px">Новости</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="Контакты.html"><span style="font-size: 20px">Контакты</span></a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+
+      <input class="form-control mr-sm-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    </form>
+  </div>
+</nav>
+</header>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img style="width: 50px;" src="img/teslaclubb.png">
+        <h5>Заполните, пожалуйста, форму ниже, чтобы наши менеджеры
+          могли с Вами связаться</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          <p aria-hidden="true">&times;</p>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Ваше имя</label>
+            <input type="text" class="form-control" id="message-text" >
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Телефон</label>
+            <input for="tel"  id="message" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">E-mail</label>
+            <input for="email" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="button" onclick="f()" style="background-color: red; border-color: red;" class="btn btn-primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+function f () {
+	alert("Спасибо, Ваша форма успешно отправлена. Нажмите 'закрыть' что бы выйти из этого окна.");
+}
+
+</script>
+<br><br>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:30px">Покупайте Вашу Tesla напрямую с завода</h1>
+
+    <h3 style="font-size: 30px">с помощью Tesla Club Ukraine</h3>
+    <button type="button" class="btn btn-primary" style="background-color: red; border-color: red;" data-toggle="modal" data-target="#exampleModal">Приобрести</button>
+  </div>
+</div>
+
+  <div class="container my-5 py-5 z-depth-1">
+
+ 
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img class="z wow fadeInLeft" data-wow-duration="2s" data-wow-offset="200" src="https://tesla-club.com.ua/storage/images/tesla/model-x.png" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0" style="padding-left: 100px">
+
+          <p class="font-weight-bold"></p>
+<div class="l">
+          <h3 class="font-weight-bold">Tesla Model X</h3>
+
+          <p class="text-muted">   
+                      <ul style="font-size: 18px">
+        <li>Самый быстрый в мире кроссовер</li>
+        <li>Наиболее безопасный автомобиль своего класса</li>
+        <li>5-7 мест</li>
+        <li>Двери сокола</li>
+        <li>Пневмоподвеска</li>
+        <li>Система автономного управления</li>
+        <li>8 лет гарантии на батарею</li>
+      </ul>
+    </p>
+    <br>
+
+    <button type="button" class="btn btn-primary" style="background-color: red; border-color: red; color: rgb(255, 255, 255);" data-toggle="modal" data-target="#exampleModal">Приобрести<i class="fas fa-arrow-right fs-9 ml-2"></i></button>
+
+
+<button type="button" class="btn btn-primary" style="background-color: white; border-color: red; color: red;" data-toggle="modal" data-target="#exampleModal">Консультация<i class="fas fa-arrow-right fs-9 ml-2"></i></button>
+
+         <a class="btn btn-outline-primary mx-0" style="background-color: white; border-color: red; color: red;" href="Model x.html">Подробнее <i class="fas fa-arrow-right fs-9 ml-2"></i></a>
+</div>          
+
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!--Section: Content-->
+  </div>
+<hr>
+  <div class="container my-5 py-5 z-depth-1">
+
+ 
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+
+      <!--Grid row-->
+      <div class="row">
+
+         <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0" style="padding-right: 150px">
+
+          <p class="font-weight-bold"></p>
+<div class="l">
+          <h3 class="font-weight-bold">Tesla Model S</h3>
+
+          <p class="text-muted">   
+      <ul style="font-size: 18px">
+        <li>Динамика разгона до 100 км / ч - 2.7-4.4 сек</li>
+        <li>Пять звезд безопасности, система предотвращения столкновения</li>
+        <li>5 мест (2 дополнительные детские места, в качестве опции)</li>
+        <li>Пневмоподвеска</li>
+        <li>Система автономного управления</li>
+        <li>8 лет гарантии на батарею</li>
+      </ul> 
+    </p>
+    <br>
+    <button type="button" class="btn btn-primary" style="background-color: red; border-color: red; color: rgb(255, 255, 255);" data-toggle="modal" data-target="#exampleModal">Приобрести<i class="fas fa-arrow-right fs-9 ml-2"></i></button>
+
+
+    <button type="button" class="btn btn-primary" style="background-color: white; border-color: red; color: red;" data-toggle="modal" data-target="#exampleModal">Консультация<i class="fas fa-arrow-right fs-9 ml-2"></i></button>
+    
+             <a class="btn btn-outline-primary mx-0" style="background-color: white; border-color: red; color: red;" href="Model s.html">Подробнее <i class="fas fa-arrow-right fs-9 ml-2"></i></a>
+</div>          
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img style="padding-left: 200px" class="z wow fadeInRight" data-wow-duration="2s" data-wow-offset="200" src="https://tesla-club.com.ua/storage/images/tesla/model-s.png" alt="">
+
+        </div>
+        <!--Grid column-->
+
+       
+      </div>
+      <!--Grid row-->
+    </section>
+    <!--Section: Content-->
+  </div>
+<hr>
+
+  <div class="container my-5 py-5 z-depth-1">
+
+ 
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img class="z wow fadeInLeft" data-wow-duration="2s" data-wow-offset="200" src="https://tesla-club.com.ua/storage/images/tesla/model-3.png" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0" style="padding-left: 100px">
+
+          <p class="font-weight-bold"></p>
+
+          <h3 class="font-weight-bold">Tesla Model 3, Y</h3>
+
+          <p class="text-muted">   
+<ul style="font-size: 18px">
+        <li>Седан с запасом хода 350 км</li>
+        <li>5 мест</li>
+        <li>Самый доступный автомобиль Tesla</li>
+        <li>15-дюймовий дисплей</li>
+        <li>Система автономного управления</li>
+        <li>8 лет гарантии на батарею</li>
+      </ul>  
+    </p>
+    <br>
+<div class="l">
+  <button type="button" class="btn btn-primary" style="background-color: red; border-color: red; color: rgb(255, 255, 255);" data-toggle="modal" data-target="#exampleModal">Приобрести<i class="fas fa-arrow-right fs-9 ml-2"></i></button>
+
+
+  <button type="button" class="btn btn-primary" style="background-color: white; border-color: red; color: red;" data-toggle="modal" data-target="#exampleModal">Консультация<i class="fas fa-arrow-right fs-9 ml-2"></i></button>
+  
+           <a class="btn btn-outline-primary mx-0" style="background-color: white; border-color: red; color: red;" href="Model 3, Y.html">Подробнее <i class="fas fa-arrow-right fs-9 ml-2"></i></a>
+</div>          
+
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!--Section: Content-->
+  </div>
+
+<div class="hero-image2">
+  <div class="hero-text2">
+    <h1 style="font-size:30px" class="wow zoomInDown">Идеальное зарядное устройство</h1>
+
+    <h3 style="font-size: 30px">для дома и офиса</h3>
+    <button type="button" class="btn btn-primary" style="background-color: red; border-color: red;" data-toggle="modal" data-target="#exampleModal">Приобрести</button>
+
+  </div>
+</div>
+
+
+
+<div class="container z-depth-1 my-5 py-5 px-4 px-lg-0">
+
+  <!-- Section -->
+  <section>
+    
+    <h3 class="font-weight-bold text-center dark-grey-text pb-2">ПОРЯДОК ПРИОБРЕТЕНИЯ TESLA В УКРАИНЕ</h3>
+    <hr class="w-header my-4">
+    
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+        <ol class="timeline">
+          <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Выбор автомобиля и комплектации</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/tesla-model-x.png"/></p>
+            <p class="text-muted">Опционально можно заказать следующее оборудование:
+ускоренная зарядка, увеличена батарея,
+премиальный пакет, отделка салона, цвет и
+другие</p>
+          </li>
+
+          <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Предоплата</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/coin-in-hand.png"/></p>
+            <p class="text-muted">Официальная подписка в размере 25000 евро за авто Model S и Model X, 1000 евро за Model 3 <b> или 4000 евро при заказе с помощью Tesla Club Ukraine</b></p>
+          </li>
+
+          <li class="timeline-element">
+            <h5 id="garantia" class="font-weight-bold dark-grey-text mb-3">Заказ на сайте<br>
+tesla.com</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/macbook-pictures--v1.png"/></p>
+            <p class="text-muted">При заказе рекомендуется указывать Польшу как страну-получателя</p>
+          </li>
+
+          <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Гарантия</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/shield.png"/></p>
+            <p id="car" class="text-muted">В случае заказа автомобиля с нашей помощью на него распространяется европейская гарантия 4 года или 80 000 км автомобиль и 8 лет на двигатель и батарею, без ограничения пробега</p>
+          </li>
+
+            <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Заказ на сайте<br>
+tesla.com</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/timer.png"/></p>
+            <p class="text-muted">
+              <ul>
+                <li>Заказывая автомобиль на сайте срок доставки Model S и Model X составляет 3-4 месяца</li>
+                <br>
+                <li>
+                  <b>Эксклюзивно </b>Тесла Клуб Украина предлагает автомобили, которые есть в наличии (демо и новые автомобили) на европейском заводе Tesla. В таком случае срок доставки -<b> 2-6 недель</b>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Транспортировка
+из Европы</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/truck.png"><p>Доставка Вашего Tesla в Украине выполняется специально оборудованным автомобилем и страхуется при транспортировке на сумму 250 000 евро</p>
+            
+          </li>
+
+          <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Таможенное оформление</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/ios/50/000000/kindle.png"/></p>
+            <p class="text-muted">Таможенные платежи осуществляются перед пересечением границы на счет таможни. К концу 2018 они составляют 0% от стоимости авто</p>
+          </li>  
+
+         <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Страхование</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/wired/64/000000/vehicle-security.png"/><p></p>
+            <p class="text-muted">Тесла Клуб Украина может предложить специальные условия КАСКО страхования с нашим партнером-компанией UNIQA</p>
+          </li>  
+
+          <li class="timeline-element">
+            <h5 class="font-weight-bold dark-grey-text mb-3">Регистрация и оплата
+в пенсионный фонд</h5>
+            <p class="grey-text font-small"><img src="https://img.icons8.com/carbon-copy/100/000000/checkmark.png"/></p>
+            <p class="text-muted">Регистрация Tesla в городе Вашего проживания и оплата в пенсионный фонд в размере 5% от стоимости автомобиля до растаможивания</p>
+          </li>       
+        </ol>
+
+      </div>
+    </div>
+    
+  </section>
+  <!-- Section -->
+  
+</div>
+
+
+<br><br>
+<div class="choose_t">КАКУЮ TESLA ЛУЧШЕ ВЫБРАТЬ?</div>
+   <br>
+<div class="parentchoose">
+  <div class="div1"><p class="p_div wow fadeInLeft" data-wow-duration="2s" data-wow-offset="200">Американскую?</p>
+    <br>
+    <div class="p_img"><img src="img/broken_car.jpg" class="wow fadeInLeft" data-wow-duration="2s" data-wow-offset="200"></div>
+  </div>
+  <div class="div2"><p class="p_div wow fadeInRight" data-wow-duration="2s" data-wow-offset="200">Европейскую?</p>
+    <br>
+    <div class="p_img"><img src="img/workable_car.jpg" class="wow fadeInRight" data-wow-duration="2s" data-wow-offset="200"></div>
+  </div>
+</div>
+<div class="button2"><button id="serviese" class="button2"><a class="link" href="Авто.html">Узнать</a></button></div>
+<br><br>
+
+<div class="hero-image3"> 
+    <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-lg-7">
+          <br>
+          <h2>НАШИ УСЛУГИ ПРИ ЗАКАЗЕ</h2>
+           <br>
+        <h2>1 Доставка под ключь</h2>
+    <p>Для вашего максимального удобства мы можем помочь Вам с приобретением автомобиля и организацией доставки на всех этапах</p>
+
+    <h2>2 Юридический договор</h2>
+    <p>Если вы хотите приобрести Tesla с помощью Tesla Club Ukraine - мы подпишем с Вами договор о поставках на физическое или юридическое лицо</p>
+
+        <h2>3 Экспертиза и способ подзарядки</h2>
+    <p>Официальная позиция Tesla - исключительно прямые продажи с завода, без дилеров, перепродают новые автомобили. Поэтому мы не предлагаем авто в наличии в Украине, но можем проконсультировать относительно всех вопросов покупки, эксплуатации, страхования и подготовки места для зарядки автомобиля.
+      <br><br>
+
+Наш инженер может выехать к Вам в дом или офис для того, чтобы подобрать оптимальное решение по зарядной станции с учетом имеющихся электрических лимитов, графику эксплуатации и бюджета. У нас есть решение на все случаи: от частного гаража в паркинг в многоквартирном доме.</p>
+
+<h2>4 Консультирование по всем вопросам</h2>
+    <p>
+      Также, мы с радостью предоставим Вам консультации на счет:
+      <ul>
+        <li>Выбора комплектации</li>
+        <li>Транспортировка</li>
+        <li>Осуществление платежей для физического или юридического лица</li>
+        <li>Таможенного оформления</li>
+        <li>Постановки на учет</li>
+        <li>Подключение автомобиля к постоянного доступа в интернет в Украине</li>
+        <li>Подключение и настройка мобильного приложения для дистанционного мониторинга</li>
+        <li>Консультация и помощь по вопросам гарантийного ремонта</li>
+      </ul>
+    </p>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+    </section>
+    <!--Section: Content-->
+
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <div id="map"></div>
+
+    <script>
+
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: {lat: 50.262987, lng: 19.079718}
+        });
+
+        setMarkers(map);
+      }
+
+
+      var beaches = [
+        ['Автосалон Tesla', 50.255245, 30.632298, 4],
+        ['Tesla Supercharger', 50.262987, 19.079718, 5],
+        ['Автосалон Tesla', 48.601133, 14.118652, 3],
+        ['Автосалон Tesla', 47.037704, 15.478278, 2],
+        ['Автосалон Tesla', 52.506416, 13.328391, 1],
+        ['Автосалон Tesla', 48.157135, 16.335304, 1],
+        ['Автосалон Tesla', 50.489632, 30.470495, 1],
+        ['Автосалон Tesla', 50.106528, 14.503320, 1]
+      ];
+
+      function setMarkers(map) {
+
+        var image = {
+          url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(20, 32),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 32)
+        };
+
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+        for (var i = 0; i < beaches.length; i++) {
+          var beach = beaches[i];
+          var marker = new google.maps.Marker({
+            position: {lat: beach[1], lng: beach[2]},
+            map: map,
+            icon: image,
+            shape: shape,
+            title: beach[0],
+            zIndex: beach[3]
+          });
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoxKFkTRnex79ixJxqXQVw3gY_Xg0OEFc&callback=initMap">
+    </script>
+
+<div id="news"></div>
+<br><br>
+
+<h1 style="text-align: center;">Новости</h1>
+<br>
+
+<div class="container">
+
+  <div class="card" style="width: 18rem;">
+  <img src="https://tesla-club.com.ua/storage/news/822/QQKp1zAsqsIn2IGSuweubjI0NqrRZjDu6LzEmc2P.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">МЭР НЬЮ-ЙОРКА попросил ГЛАВУ TESLA НАЧАТЬ ПРОИЗВОДСТВО аппарат ИВЛ<br>
+    18.03.2020р</h5>
+    <p class="card-text">Недавно глава компании Tesla и SpaceX Илон Маск сообщил в Twitter о готовности начать выпуск аппаратов искусственной <br>...</p>
+    <a href="#" class="btn btn-primary" style="background-color: white; color: black; border-color: rgb(255, 255, 255);">Подробнее</a>
+  </div>
+</div>
+<br>
+<div class="card" style="width: 18rem;">
+  <img src="https://tesla-club.com.ua/storage/news/823/CsfxzLA3WnLAzeyIt8xE5hNuhS4xVsJe6wRNS67O.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">ЗАВОДЫ TESLA В США ВСЕ ЖЕ будут остановлены<br>23.03.2020р</h5>
+    <p class="card-text">Несмотря на все старания Илона Маска, Tesla все же приостановит производство на двух своих фабриках - в Фримонте и Баффало. Ранее власти Калифорнии призвала топ-менеджера закрыть завод<br>...</p>
+    <a href="#" class="btn btn-primary" style="background-color: white; color: black; border-color: rgb(255, 255, 255);">Подробнее</a>
+  </div>
+</div>
+<br>
+<div class="card" style="width: 18rem;">
+  <img src="img/car.jpg" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">TESLA И SPACEX ПЕРЕЙДУТ НА ВЫПУСК аппарат ИВЛ<br>23.03.2020р</h5>
+    <p class="card-text">Глава компании Tesla и SpaceX Илон Маск сообщил в Twitter, что его заводы перейдут на выпуск аппаратов искусственной вентиляции легких<br>...</p>
+    <a href="#" class="btn btn-primary" style="background-color: white; color: rgb(0, 0, 0); border-color: white;" >Подробнее</a>
+  </div>
+</div>
+
+</div>
+<br><br>
+
+
+<footer style="background-color: #f1f1f1">
+  <br><br>
+  <div class="parent">
+    <div class="w1">
+     <h5 class="font-weight-bold text-uppercase mb-4"><a style="color: black; text-decoration: none;" href="https://old.go-tou.com/ua/goods" target="_blank">Зарядные устройства</a></h5>
+        <p><img height="200" width="150" class="w2_2" src="img/123.jpg"></p>
+        <p>Универсальные, умные зарядные станции.</p><p> Лучший выбор для подключения к платформе Go To-U.</p>
+    </div>
+    <div class="w2">
+      <h5 class="font-weight-bold text-uppercase mb-4"><a href="#car" style="color: black; text-decoration: none;">Быстрая Доставка</a></h5>
+       <h5 class="font-weight-bold text-uppercase mb-4">Главная</h5>
+       <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="Инфаструктура.html" style="color: black; text-decoration: none;">Инфаструктура</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#news" style="color: black; text-decoration: none;">Новости</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="Контакты.html" style="color: black; text-decoration: none;">Контакты</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <a href="Model x.html" style="color: black; text-decoration: none;">Tesla Model X</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <a href="Model s.html"style="color: black; text-decoration: none;" >Tesla Model S</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <a href="Model 3.html" style="color: black; text-decoration: none;">Tesla Model 3</a>
+            </p>
+          </li>
+        </ul>
+    </div>
+    <div class="w3">
+      <h5 class="font-weight-bold text-uppercase mb-4"><a href="#serviese" style="color: black; text-decoration: none;">Наши Услуги</a></h5>
+      <h5 class="font-weight-bold text-uppercase mb-4" style="color: black; text-decoration: none;">Адресс</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i><a style="color: black; font-family: 'Times New Roman', Times, serif; text-decoration: none;" ;  href="mailto: sk.anton06@gmail.com">sk.anton06@gmail.com</a></p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i><a href="tel: +380682505442" style="color: black; text-decoration: none; font-family: 'Times New Roman', Times, serif;" >0682505442</a></p>
+          </li>
+        </ul>
+    </div>
+    <div class="w4">
+      <h5 class="font-weight-bold text-uppercase mb-4"><a href="#garantia" style="color: black; text-decoration: none;">Гарантия</a></h5>
+              <h5 class="font-weight-bold text-uppercase mb-4">Социальные сети</h5>
+
+        <!-- Facebook -->
+        <a href="https://ru-ru.facebook.com/Kharkov.Hillel/" target="blank" type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f" style="color: black; text-decoration: none;"></i>
+        </a>
+
+        <a href="https://www.instagram.com/hillel_itschool/?hl=ru" target="_blank" type="button" class="btn-floating btn-fb">
+          <i class="fab fa-instagram" style="color: black; text-decoration: none;"></i>
+        </a>
+        
+        <a  href="https://www.pinterest.com/oregonelectricv/tesla-motors/" target="blank" type="button" class="btn-floating btn-tw">
+          <i class="fab fa-pinterest" style="color: black; text-decoration: none;"></i>
+        </a>
+    </div>
+  </div>
+    <div class="bottom-top" >
+  <span>Copyright © 2020 Tesla Club Ukranian. Все права защищены.</span>
+  <br>
+  <a class="link2" href="#toppage"><span class="bottom-top" style="color: black; text-decoration: none;"> К верху страницы</span></a>
+</div>
+<br>
+</footer>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a[href*=#]").on("click", function (e) {
+      var anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top
+      }, 777);
+      e.preventDefault();
+      return false;
+    });
+  });
+</script>
+<!--
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #5C97BF url(http://hello-site.ru//main/images/preloads/ball-triangle.svg) center center no-repeat;background-size:41px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+-->
+
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
